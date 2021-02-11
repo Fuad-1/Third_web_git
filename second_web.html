@@ -1,0 +1,142 @@
+<p> Style tag, Embedded style, named color, hexcode, rgb</p>
+<p>background-color,height, width,font,css mesasuring unit</p>
+
+<p>CSS ID(#=pound), apply styles to a specific HTML element</p>
+
+<p>CSS class(.=dot), apply styles to multiple elements, ID vs Class</p>
+
+<p>Style a group of elements, style a small portion of text</p>
+
+<p>Border, border radius, margin, different ways to set margin</p>
+
+<p>Padding, different ways to set padding, CSS Box model</p>
+
+<p>Text align, float, display, inline, block, inline-block, external CSS</p>
+
+<ol>CSS Box model
+    <li>border</li>
+    <li>width</li>
+    <li>height</li>
+    <li>margin</li>
+    <li>padding</li>
+</ol>
+<ol>3 types of css adding
+    <li>Embedded style(internal CSS)</li>
+    <li>link style(External CSS)</li>
+    <li>(Inline CSS)</li>
+</ol>
+<ol>3 ways of css color define
+    <li>named color</li>
+    <li>Hexcode</li>
+    <li>rgb</li>
+</ol>
+<ol>3 ways to set margin
+    <li>single value</li>
+    <li>double value</li>
+    <li>4 vaues</li>
+</ol>
+------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Cascading Style Sheet</title>
+    <!--<link rel="stylesheet" href="sec_web_css.css">link = alternative way of CSS adding -->
+    <style>
+        h1{
+    color: brown; 
+    background-color: sandybrown;
+    height: 100px ;
+    width: 50%; 
+    
+}
+img{
+    height: 70%;
+    width: 40%;
+}
+p{
+    color:darkcyan;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+#About_person{
+    color: seagreen;
+    font-size: 50px;
+
+}
+.activity{
+    color: slategray;
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: tan;
+}
+/* you also try this:
+h1.activity{
+    color: tomato;
+}*/ 
+.remmember{
+    color: tomato;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*
+.contest_title{
+    background-color:khaki;
+    font-size: 30px;
+    border-radius: 30px; /*thickness/increase sharpness */
+    /*margin: 40px;  v1= gap all side */
+    /*margin: 20px 60px ;up & down + left & Right v2=20px 60px */
+   /* margin: 20px 60px 80px 100px; up right down left v3=20px 60px 80px 100px*/
+   /* height: 500px;
+    width: 500px;  */
+   /* padding: 40px 200px; Same Explanation like margin */
+   /* border: 5px solid #008000 thickness size, type(solid/dotted/dash), color
+}*/
+
+.contest_title{
+    border: 1px solid purple;
+    border-radius: 20px;
+    margin: 1%;
+    width: 30%;
+    /*float: left; /*o|o|o|*/
+    display:inline-block; /*alternative of float*/
+    
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+        </style>
+
+</head>
+    <h1>Adding Makeup Yay!</h1>
+<body>
+    <p id="introduction" class="activity">hello ji </p>
+    <p id="About_person">Hello Fuad Hasan</p>
+    <img src="photos/106508080_148970673458865_2978006442946817700_n.jpg" alt="">
+    <p class="activity">You will do it</p>
+    <p class="activity">Cricket</p>
+    <p class="activity">Badminton</p>
+    <p class="activity">Football</p>
+    <p>you should <span class="remmember">believe in yourself</span></p>
+
+    <div class="contest_title">
+        <h2>programming</h2>
+        <p>welcome here. Amra Tower, Jhauchor Bazar, Hazaribag,Dhaka-1201</p>
+    </div>    
+    <div class="contest_title">
+        <h2>Contest 2021</h2>
+        <p>yaay!Amra Tower, Jhauchor Bazar, Hazaribag,Dhaka-1201</p>
+    </div>    
+    <div class="contest_title">
+        <h2>championship</h2>
+        <p>do it!Amra Tower, Jhauchor Bazar, Hazaribag,Dhaka-1201 </p>
+    </div>
+    
+</body>
+</html>
